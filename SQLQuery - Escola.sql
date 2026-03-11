@@ -10,7 +10,7 @@ nome varchar(100) not null,
 email nvarchar(100) not null unique
 )
 
-create table diciplinas_crisleikeli(
+create table disciplinas_crisleikeli(
 id int primary key identity(1,1),
 nome varchar(50) not null,
 professor_id int, 
@@ -32,8 +32,8 @@ alunos_id int,
 disciplinas_id int,
 primary key(alunos_id, disciplinas_id),
 constraint fk_alunos_crisleikeli_disciplinas_crisleikeli 
-foreign key (alunos_id) references alunos_crisleikeli(id)
+foreign key (alunos_id) references alunos_crisleikeli(id),
 constraint fk_disciplina_crisleikeli_alunos_crisleikeli
-foreign key (disciplinas+id) references disciplinas_crisleikeli(id)
+foreign key (disciplinas_id) references disciplinas_crisleikeli(id)
 )
 
