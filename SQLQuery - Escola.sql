@@ -27,7 +27,7 @@ constraint fk_turmas_crisleikeli_alunos_crisleikeli
 foreign key (turma_id) references turmas_crisleikeli(id)
 )
 
-create table alunos_disciplinas_crisleikeli(
+create table alunos_crisleikeli_disciplinas_crisleikeli(
 alunos_id int,
 disciplinas_id int,
 primary key(alunos_id, disciplinas_id),
