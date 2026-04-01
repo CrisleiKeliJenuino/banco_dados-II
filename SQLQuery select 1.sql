@@ -16,4 +16,18 @@ SELECT * FROM alunos_crisleikeli WHERE turma_id = 1
 
 SELECT * FROM disciplinas_crisleikeli WHERE professor_id = 1
 
-SELECT * FROM alunos_crisleikeli
+SELECT * FROM alunos_crisleikeli WHERE turma_id = 1 AND id < 3
+
+SELECT * FROM turmas_crisleikeli WHERE turno = 'Manhã' OR turno = 'Tarde'
+
+SELECT * FROM turmas_crisleikeli WHERE turno IN ('Manhã', 'Tarde')
+
+SELECT * FROM professores_crisleikeli WHERE nome LIKE 'Ana%'
+
+SELECT * FROM alunos_crisleikeli ORDER BY nome ASC
+
+SELECT * FROM alunos_crisleikeli ORDER BY nome DESC
+
+SELECT id, nome  FROM disciplinas_crisleikeli ORDER BY nome ASC
+
+SELECT * FROM turmas_crisleikeli WHERE turno IN ('Manhã', 'Noite') ORDER BY nome ASC
