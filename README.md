@@ -3,6 +3,8 @@
 ![SQL](https://img.shields.io/badge/SQL-025E8C?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Em%20Andamento-f2c94c?style=for-the-badge)
 
+**Linguagem principal:** SQL
+
 Repositório com as aulas, práticas e exercícios da disciplina **Banco de Dados II**, registrando a evolução do conteúdo em **SQL**.
 
 📍 Curso: Técnico em Desenvolvimento de Sistemas  
