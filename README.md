@@ -14,7 +14,7 @@ Repositório com as aulas, práticas e exercícios da disciplina **Banco de Dado
 
 Material desenvolvido com orientação do professor:
 
-[![GitHub do Professor](https://img.shields.io/badge/GitHub-Pedro_Goncalves-181717?style=for-the-badge&logo=github)](https://github.com/PedroGoncalves-Dev)
+[![GitHub do Professor](https://img.shields.io/badge/GitHub-Pedro_Goncalves-8A2BE2?style=for-the-badge&logo=github)](https://github.com/PedroGoncalves-Dev)
 
 ---
 
