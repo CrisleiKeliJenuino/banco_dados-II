@@ -1,81 +1,101 @@
-# Banco de Dados II
+# 🗄️ Aula Banco de Dados II
 
 ![SQL](https://img.shields.io/badge/SQL-025E8C?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Em%20Andamento-f2c94c?style=for-the-badge)
 
-Repositório com as práticas da disciplina de Banco de Dados II.
+Repositório com as aulas, práticas e exercícios da disciplina **Banco de Dados II**, registrando a evolução do conteúdo em **SQL**.
 
-Curso: Tecnico em Desenvolvimento de Sistemas  
-Instituicao: ETEC Prof. Massuyuki Kawano - Tupa/SP
+📍 Curso: Técnico em Desenvolvimento de Sistemas  
+🏫 Instituição: ETEC Prof. Massuyuki Kawano – Tupã/SP
 
-## Objetivo deste repositorio
+---
 
-Documentar os scripts desenvolvidos em aula, acompanhando a evolucao do conteudo pratico em SQL.
+## 👨‍🏫 Professor
 
-## Aulas ja realizadas
+Material desenvolvido com orientação do professor:
 
-Com base nos scripts atuais, estas atividades ja foram trabalhadas:
+[![GitHub do Professor](https://img.shields.io/badge/GitHub-Pedro_Goncalves-181717?style=for-the-badge&logo=github)](https://github.com/PedroGoncalves-Dev)
 
-1. Modelagem e criacao de estrutura relacional (base Escola)
-2. Definicao de chaves primarias e estrangeiras
-3. Relacionamento N:N com tabela associativa
-4. Insercao de dados nas tabelas
-5. Consultas com SELECT e selecao de colunas especificas
-6. Filtros com WHERE
-7. Operadores logicos (AND, OR)
-8. Uso de IN
-9. Uso de LIKE (inicio, fim e trecho)
-10. Ordenacao com ORDER BY (ASC e DESC)
+---
 
-## Estrutura dos scripts
+## 🎯 Objetivo da Disciplina
 
-- SQLQuery - Escola.sql
-	- Criacao das tabelas principais: turmas, professores, disciplinas, alunos e tabela associativa
-	- Definicao de restricoes: PRIMARY KEY, FOREIGN KEY e UNIQUE
-	- Insercoes iniciais de turmas, professores e alunos
+Aprofundar os conhecimentos em bancos de dados relacionais, desenvolvendo a capacidade de estruturar, consultar e administrar um banco de dados de forma eficiente e segura.
 
-- SQLQuery - Escola - dados.sql
-	- Insercoes complementares de disciplinas
-	- Insercoes na tabela de relacionamento aluno x disciplina
+---
 
-- SQLQuery select 1.sql
-	- Consultas basicas de leitura
-	- Alias de coluna
-	- Filtros por condicao simples e composta
-	- Ordenacao de resultados
+## ✅ Aulas já realizadas (com base nos scripts)
 
-- SQLQuery like-count-innerjoin.sql
-	- Exercicios de LIKE para busca textual
-	- Inicio de pratica com funcoes de agregacao/relacionamento
+Até o momento, os scripts do repositório cobrem:
 
-## Modelo trabalhado em aula
+- Modelagem e criação de estrutura relacional (base **Escola**)
+- Criação de tabelas e restrições: `PRIMARY KEY`, `FOREIGN KEY`, `UNIQUE`
+- Relacionamento N:N com tabela associativa (aluno x disciplina)
+- Inserção de dados com `INSERT INTO`
+- Consultas com `SELECT` (todas as colunas e colunas específicas)
+- Filtros com `WHERE`
+- Operadores lógicos: `AND` e `OR`
+- Uso de `IN`
+- Uso de `LIKE` (começo, fim e trecho)
+- Ordenação com `ORDER BY` (`ASC` e `DESC`)
 
-Entidades principais:
+---
+
+## 🗂️ Scripts e o que foi feito em aula
+
+- **SQLQuery - Escola.sql**
+  - Criação das tabelas: `turmas`, `professores`, `disciplinas`, `alunos` e tabela associativa
+  - Definição de restrições e relacionamentos
+  - Inserções iniciais de turmas, professores e alunos
+
+- **SQLQuery - Escola - dados.sql**
+  - Inserções complementares em `disciplinas`
+  - Inserções na tabela de relacionamento `alunos_disciplinas`
+
+- **SQLQuery select 1.sql**
+  - Consultas básicas de leitura
+  - Alias de coluna (`AS`)
+  - Filtros por condições simples e compostas
+  - Ordenação de resultados
+
+- **SQLQuery like-count-innerjoin.sql**
+  - Exercícios de `LIKE` para busca textual
+  - Rascunho/início de prática com agregação/relacionamento (ainda em construção)
+
+---
+
+## 🧩 Modelo trabalhado em aula (resumo)
+
+Entidades:
 
 - Turmas
 - Professores
 - Disciplinas
 - Alunos
-- Alunos_Disciplinas (relacao muitos-para-muitos)
+- Alunos_Disciplinas (relação muitos-para-muitos)
 
-Relacionamentos praticados:
+Relacionamentos:
 
-- Um professor pode estar vinculado a varias disciplinas
-- Uma turma pode ter varios alunos
-- Um aluno pode cursar varias disciplinas e uma disciplina pode ter varios alunos
+- Uma **turma** possui vários **alunos**
+- Um **professor** pode estar vinculado a várias **disciplinas**
+- Um **aluno** pode cursar várias **disciplinas** e uma **disciplina** pode ter vários **alunos**
 
-## Como usar os scripts
+---
 
-1. Executar primeiro SQLQuery - Escola.sql para criar a estrutura.
-2. Executar SQLQuery - Escola - dados.sql para completar a carga de dados.
-3. Executar os scripts de consulta para praticar leitura e filtros:
-	 - SQLQuery select 1.sql
-	 - SQLQuery like-count-innerjoin.sql
+## ▶️ Como executar
 
-## Proximos passos esperados na disciplina
+1. Execute **SQLQuery - Escola.sql** para criar a estrutura do banco.
+2. Execute **SQLQuery - Escola - dados.sql** para completar a carga de dados.
+3. Rode as consultas para praticar:
+   - **SQLQuery select 1.sql**
+   - **SQLQuery like-count-innerjoin.sql**
 
-- JOINs entre tabelas
-- COUNT e outras funcoes de agregacao
-- GROUP BY e HAVING
-- Views, procedures, functions e triggers
-- Transacoes e administracao do banco
+---
+
+## 📌 Próximos tópicos (ainda não consolidados nos scripts)
+
+- `JOIN` entre tabelas
+- Funções de agregação: `COUNT`, etc.
+- `GROUP BY` e `HAVING`
+- `VIEW`, `PROCEDURE`, `FUNCTION` e `TRIGGER`
+- Transações e administração do banco
