@@ -40,9 +40,26 @@ SELECT a.* FROM alunos_crisleikeli a
 INNER JOIN turmas_crisleikeli t ON t.id = a.turma_id
 WHERE t.turno = 'Manhã'
 
-12.	Mostre as disciplinas ministradas pelo professor 'Carlos Mendes'.
-
 SELECT d.nome AS 'Disciplinas' 
-FROM disciplinas_crisleikeli
-INNER JOIN professores_crisleikeli p 
+FROM disciplinas_crisleikeli d
+INNER JOIN professores_crisleikeli p ON d.professor_id = p.id
+WHERE p.nome = 'Carlos Mendes'
+
+SELECT p.nome      AS 'Professor'
+      ,COUNT(d.id) AS 'Total disciplina' 
+FROM professores_crisleikeli p 
+INNER JOIN disciplinas_crisleikeli d ON d.professor_id = p.id
+GROUP BY p.nome 
+ORDER BY 'Total disciplina' DESC
+
+SELECT a.nome       AS 'Aluno'
+	   ,COUNT(ad.disciplinas_id) AS 'Total disciplinas'
+FROM alunos_crisleikeli a
+INNER JOIN alunos_crisleikeli_disciplinas_crisleikeli ad ON ad.alunos_id = a.id
+GROUP BY a.nome
+
+
+
+
+
 
